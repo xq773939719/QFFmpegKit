@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let release = "0.1"
+let release = "1.0"
 
 let frameworks = ["ffmpegkit": "c0b710038bb52043f06258237ef2d3ba9d79b170a0f1acc2a272a43edaf8cdf6", "libavcodec": "b5dd0ea64b462114c68988fa4c51c0f5f64e9e32a4bea5818d0a288ebe95e937", "libavdevice": "f92942a1c910e10e649bc7450028f73c58d72d56dd677d749cedfbfd06ebb0a9", "libavfilter": "fdee44ad52ed1e2f1d02924f784d3fa2be3bc96d9f298ba047ea5139f7d4511c", "libavformat": "075041b758c5e08e3e4f8006a79889a3991e7e7ebd7cdd38044e5ef835c3fba6", "libavutil": "a4478b4d101c9a615a3548727556acb664f813fb1138a88dbb9125352d1912e7", "libswresample": "7c9d962a4cee2d480ea91a5121106affe58dbe333d5fc9f72623ada8847e48d0", "libswscale": "21a84586fdb41dabb5e179166bc77d99096bf9792d82787c435419431d465cde"]
 

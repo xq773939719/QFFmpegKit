@@ -32,9 +32,9 @@ git add -u
 git commit -m "Creating release for $FFMPEG_KIT_TAG"
 
 echo "Creating Tag..."
-# git tag $FFMPEG_KIT_TAG
+git tag $FFMPEG_KIT_TAG
 git push -f
-# git push origin --tags -f
+git push origin --tags -f
 
 echo "Creating Release..."
 gh release create -p -d $FFMPEG_KIT_TAG -t "QFFmpegKit $FFMPEG_KIT_TAG" --generate-notes --verify-tag
