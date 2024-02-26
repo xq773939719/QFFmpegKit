@@ -27,7 +27,7 @@ sudo ./ios.sh --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-v
 #./watchos.sh --enable-watchos-zlib --enable-watchos-bzip2 -x
 
 echo "Bundling final XCFramework"
-./apple.sh --disable-appletvos --disable-appletvsimulator --disable-macosx
+sudo ./apple.sh --disable-appletvos --disable-appletvsimulator --disable-macosx
 
 cd ../../
 
