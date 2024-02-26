@@ -5,8 +5,8 @@ source "$(pwd)/config.sh"
 
 if [[ ! -d $WORK_DIR ]]; then
   echo "Cloning ffmpeg-kit repository..."
-  mkdir .tmp/ || true
-  cd .tmp/
+  mkdir src/ || true
+  cd src/
   git clone $FFMPEG_KIT_REPO
   cd ../
 fi

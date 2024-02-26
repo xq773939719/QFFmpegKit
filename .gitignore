@@ -89,6 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-.tmp/
+src/
 .swiftpm/
 .DS_STORE

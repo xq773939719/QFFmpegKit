@@ -25,7 +25,7 @@ PACKAGE_STRING=$(basename "$PACKAGE_STRING" ", ")
 sed -i '' -e "s/let frameworks =.*/let frameworks = [$PACKAGE_STRING]/" Package.swift
 
 echo "Copying License..."
-cp -f .tmp/ffmpeg-kit/LICENSE ./
+cp -f src/ffmpeg-kit/LICENSE ./
 
 echo "Creating Release..."
 gh release create -p -d $FFMPEG_KIT_TAG -t "QFFmpegKit $FFMPEG_KIT_TAG" --generate-notes --verify-tag
