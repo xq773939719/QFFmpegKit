@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-export BASEDIR="$(pwd)"
-source "${BASEDIR}"/config.sh
+source "$(pwd)/config.sh"
 
 echo "Updating package file..."
 PACKAGE_STRING=""
@@ -34,7 +33,7 @@ git commit -m "Creating release for $FFMPEG_KIT_TAG"
 
 echo "Creating Tag..."
 git tag $FFMPEG_KIT_TAG
-git push
+git push -f
 git push origin --tags
 
 echo "Creating Release..."
@@ -50,4 +49,4 @@ done
 
 gh release edit $FFMPEG_KIT_TAG --draft=false
 
-echo "3 done!"
+echo "3 done"

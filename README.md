@@ -23,4 +23,4 @@ See the [FFmpegKit wiki](https://github.com/arthenica/ffmpeg-kit/tree/main/apple
 _For using FFmpeg directly, see the [FFmpeg documentation](https://trac.ffmpeg.org/wiki/Using%20libav*) here_
 
 ### Building
-If you would like to build your own xcframework binaries run the `build.sh` script on a macOS machine. 
+If you would like to build your own xcframework binaries run the `1.2.3` script on a macOS machine.

@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-export BASEDIR="$(pwd)"
-source "${BASEDIR}"/config.sh
+source "$(pwd)/config.sh"
 
 if [[ ! -d $WORK_DIR ]]; then
   echo "Cloning ffmpeg-kit repository..."
@@ -19,7 +18,7 @@ git fetch --tags
 git checkout $FFMPEG_KIT_CHECKOUT
 
 echo "Building for iOS..."
-./ios.sh --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-videotoolbox --enable-ios-zlib --enable-ios-bzip2 -x
+sudo ./ios.sh --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-videotoolbox --enable-ios-zlib --enable-ios-bzip2 -x
 # echo "Building for tvOS..."
 # ./tvos.sh --enable-tvos-audiotoolbox --enable-tvos-videotoolbox --enable-tvos-zlib --enable-tvos-bzip2 -x
 # echo "Building for macOS..."
@@ -28,6 +27,8 @@ echo "Building for iOS..."
 #./watchos.sh --enable-watchos-zlib --enable-watchos-bzip2 -x
 
 echo "Bundling final XCFramework"
-./apple.sh --disable-watchos --disable-watchsimulator
+./apple.sh --disable-appletvos --disable-appletvsimulator --disable-macosx
 
-echo "2 done!"
+cd ../../
+
+echo "2 done"
